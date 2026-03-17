@@ -1,10 +1,3 @@
-from typing import Optional
-
-
-class ListNode:
-    pass
-
-
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummyHead = ListNode(0)
@@ -22,6 +15,3 @@ class Solution:
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
         return dummyHead.next
-
-if __name__ == '__main__':
-    print(Solution().addTwoNumbers(l1=[2,4,3], l2=[5,6,4]))

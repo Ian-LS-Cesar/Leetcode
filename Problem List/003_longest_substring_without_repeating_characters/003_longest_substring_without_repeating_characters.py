@@ -12,13 +12,3 @@ class Solution:
             melhor = max(melhor, indice - esquerda + 1)
 
         return melhor
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    solution = Solution()
-    print(solution.lengthOfLongestSubstring("dvdf"))
